@@ -37,15 +37,17 @@ header a{
     color: white;
     font-weight: 600;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
-    transition: ease .5s;
+    gap: 2px;
 }
+
 header a:hover{
     background-color: #21aac9;
-    transition: background-color .5s;
+    transition: all ease .5s;
+    transform: translateY(-10px) scale(1.02);
 }
 header a i{
     font-size: 1.5em;
