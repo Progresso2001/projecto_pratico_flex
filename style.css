@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #102d33; */
+    width: 100%;
+    height: 100vh;
+    font-size: 1em;
+    font-family: "Roboto Slab", sans-serif;
+}
+header{
+    background-color: #9a9494;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header  h1{
+    font-weight: 600;
+    flex: 0 0 200px;
+    text-shadow:  2px 2px 0px rgba(0,0,0,0.501);
+}
+header h1 span{
+    color: aquamarine;
+}
+header  nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+header a{
+    background-color: #1b7c92;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: ease .5s;
+}
+header a:hover{
+    background-color: #21aac9;
+    transition: background-color .5s;
+}
+header a i{
+    font-size: 1.5em;
+    color: white;
+}
+p{
+    margin-bottom: 10px;
+    text-align: justify;
+    text-indent: 10px;
+}
+article h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: center;
+}
+section.dicas{
+    padding: 20px;
+    background-color: rgba(156,156,156);
+}
+section.flex-content{
+    padding: 20px;
+    background-color: rgba(156,156,156);
+    display: flex;
+    flex-flow: column nowrap;
+   
+}
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+article > div.text{
+    flex: 1 1 500px;
+}
+article > div.media{
+    flex: 1 1 400px;
+}
+div.media > img{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+div.media > iframe{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0px 20px ;
+    width: 500px;
+    margin-top: 10px;
+}
+.text li{
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+section.dicas h2{
+    text-align: left;
+}
+.dicas li{
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+footer{
+    background-color: #1b7c92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+footer img{
+    margin-left: 20px;
+    width: 50px;
+}
+
+@media screen and (max-width:768px){
+    header, header nav{
+        flex-flow: column nowrap;
+    }
+    header h1{
+        flex-basis: 50px;
+    }
+    header nav, a{
+        width: 90vw;
+    }
+    
+}
+
+
+
+
