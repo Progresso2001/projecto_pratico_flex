@@ -1,83 +1,112 @@
-@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* body{
-    background-color: #444343;
-    width: 100%;
+ }
+ html, body{
     height: 100%;
-    font-family: "Roboto Serif", serif;
-    color: white;
-    font-size: 1.rem;
-}
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #253659;
-}
-header h1{
-    font-weight: bold;
-    margin-right: 20px;
-}
-header span{
-    color: #03A696;
-}
-header img{
-    width: 80px;
-}
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-nav a{
-    color: white;
-    background-color: #04BF9D;
-    padding: 20px;
-    text-decoration: none;
-    font-weight: bolder;
-    margin: 10px;
-    border-radius: 10px;
-    width: 30%;
-    height: 20%;
-    text-align: center;
-    margin-left:10px;
-}
-nav a:hover{
-    background-color: #03A696;
-    transform: translateY(-10px) scale(1.1);
-} */
-.container{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Serif", serif ;
+    background-color: #444343; 
+ } 
+
+conteiner{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 80px 40px 200px 40px;
-    grid-template-rows: 1fr 150px;
-}
+    grid-template-rows: 80px 40px 200px 40px;
+    grid-template-columns: 1fr 150px;
+    gap: 5px;
+    overflow: hidden;
+ }
 .caixa{
     background-color: lightgray;
-    border: 1px solid black;
-    align-items: center;
+    border: 1px solid blcak;
     padding: 10px;
 }
 #topo{
     grid-area: 1 / 1 / 2 / -1;
+    background-color: #253659;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #topo h1{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+#topo span{
+    color: #03A696;
+}
+#topo img{
+    width: 80px;
 }
 #menu{
     grid-area: 2 / 1 / -3 / -1;
 }
+#menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    list-style: none;
+}
+#menu a{
+    background-color:#04BF9D;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+#menu a:hover{
+    background-color: #03A696;
+    transform: translateY(-10px) scale(1.1)
+}
+.conteudo-principal{
+    width: 500px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
 #principal{
     grid-area: 3 / 1 / -2 / 2;
+ }
+ #principal h2, h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ #principal p{
+    text-indent: 20px;
+ }
+.lateral-conteudo{
+   width: 300px;
+   background-color: #333;
+   color: white;
+   padding: 20px;
+   border-radius: 20px;
+   float: right;
 }
-#lateral{
+.lateral-conteudo ul{
+    margin-left: 20px;
+}
+.lateral-conteudo li{
+     margin-bottom: 20px;
+}
+#secundario{
     grid-area: 3 / -2 / -2 / -1;
-}
+ }
+
 #rodape{
     grid-area: -2  / 1 / -1 / -1;
- }
+ } 
+
+ /* Estilizar novamente sobre o posicionamento do aside */
